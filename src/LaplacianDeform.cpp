@@ -1,5 +1,3 @@
-#include "stdafx.h"
-
 #include "LaplacianDeform.h"
 
 using namespace std;
@@ -143,17 +141,6 @@ void LaplaceDeformation::AllpyLaplaceDeformation(char ** argv)
 
 	BuildAdjacentMatrix(mesh);
 	cout << "ÁÚ½Ó¾ØÕó" << endl;
-
-	//for (int i=0;i<mesh.n_vertices();i++)
-	//{
-	//	for (int j = 0; j < mesh.n_vertices(); j++)
-	//	{
-	//		cout << AdjacentVertices.coeffRef(i,j);
-	//	}
-	//	cout << endl;
-	//}
-
-	//cout << VerticesDegree << endl;
 
 	BuildATtimesAMatrix(mesh);
 	cout << "ATA" << endl;
@@ -317,9 +304,5 @@ void LaplaceDeformation::SetNewcord(Surface_mesh & mesh)
 		}
 		//cout << vx_new.coeffRef(i) << endl;
 		i++;
-
-		/*	cout << pts[v_it][0] <<" ";
-			cout << pts[v_it][1] <<" ";
-			cout << pts[v_it][2] << endl;*/
 	}
 }

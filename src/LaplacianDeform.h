@@ -1,10 +1,9 @@
 #pragma once
-
 #include <vector>
-#include <iostream>
-#include <surface_mesh/Surface_mesh.h>
 #include <fstream>
+#include <iostream>
 #include <Eigen/Cholesky>
+#include <surface_mesh/Surface_mesh.h>
 
 #include <Eigen/Dense>
 #include <Eigen/Sparse>

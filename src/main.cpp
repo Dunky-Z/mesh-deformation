@@ -1,13 +1,15 @@
-#include "stdafx.h"
-#include "Laplacian1.h"
+#include "Laplacian.h"
 
 int main(int argc, char **argv)
 {
-	double start = GetTickCount();  //开始时间
+	double start = GetTickCount();
+
 	LaplaceDeformation Deform;
 	Deform.AllpyLaplaceDeformation(argv);
-	double finish = GetTickCount();   //结束时间
-	double t = finish - start;
-	cout << t << endl; //输出时间
+
+
+	
+	double finish = GetTickCount();
+	cout << finish - start << endl; 
 	return 0;
 }
